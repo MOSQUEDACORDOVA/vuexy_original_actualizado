@@ -835,7 +835,7 @@
                                     $myArray = json_decode($response, true);
                                     //consultar los clientes por RUT
                                     
-                                    for($i = 0; $i <= $myArray.length; $i++){
+                                    for($i = 0; $i < count($myArray); $i++){
                                         echo "hola:".$myArray[$i]['nationalID'];
                                     }
                                 }
