@@ -815,9 +815,7 @@
                                     Using the most basic table Leanne Grahamup, here’s how <code>.table</code>-based tables look in Bootstrap. You
                                     can use any example of below table for your table and it can be use with any type of bootstrap tables.
                                 </p>
-                            </div>
-                            <div class="table-responsive">
-                            <?php
+                                <?php
                                  
                                 //datos a enviar
                                 //url contra la que atacamos
@@ -835,11 +833,14 @@
                                     return false;
                                 }else{
                                     $myArray = json_decode($response, true);
-                                    echo $myArray[0]['acceptedMarketing'];
+                                    echo "hola:".$myArray[0]['customfields_lastname'];
                                 }
                                 
 
                             ?>
+                            </div>
+                            <div class="table-responsive">
+                            
                                 <table class="table">
                                     <thead>
                                         <tr>
