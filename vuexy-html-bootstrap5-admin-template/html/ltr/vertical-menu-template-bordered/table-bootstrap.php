@@ -820,7 +820,7 @@
                             <?php
                                  
                                 //datos a enviar
-                                $data = array("a" => "a");
+                                $data = array("tenant" => "golfsantodomingo");
                                 //url contra la que atacamos
                                 $ch = curl_init("https://mt-america.golfmanager.com/api/clientsFull");
                                 //a true, obtendremos una respuesta de la url, en otro caso, 
