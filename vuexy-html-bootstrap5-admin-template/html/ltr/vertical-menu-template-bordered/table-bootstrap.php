@@ -834,7 +834,8 @@
                                 if(!$response) {
                                     return false;
                                 }else{
-                                    var_dump($response);
+                                    $myArray = json_decode($response, true);
+                                    var_dump($myArray);
                                 }
                                 
 
