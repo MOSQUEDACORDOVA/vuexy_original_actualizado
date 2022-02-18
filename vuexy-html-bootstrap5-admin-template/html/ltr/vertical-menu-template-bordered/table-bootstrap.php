@@ -834,10 +834,6 @@
                                 }else{
                                     $myArray = json_decode($response, true);
                                     //consultar los clientes por RUT
-                                    foreach ($myArray as $clave=>$valor)
-                                    {
-                                    echo "El valor de $clave es: $valor";
-                                    }
                                     
                                     for($i = 0; $i <= $myArray.length; $i++){
                                         echo "hola:".$myArray[$i]['nationalID'];
