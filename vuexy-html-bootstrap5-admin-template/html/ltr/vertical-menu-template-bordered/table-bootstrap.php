@@ -835,7 +835,7 @@
                                     return false;
                                 }else{
                                     $myArray = json_decode($response, true);
-                                    var_dump($myArray);
+                                    echo $myArray[0]['acceptedMarketing'];
                                 }
                                 
 
