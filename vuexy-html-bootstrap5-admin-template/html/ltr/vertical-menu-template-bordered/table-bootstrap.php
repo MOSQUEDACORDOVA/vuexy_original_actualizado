@@ -816,7 +816,7 @@
                                     can use any example of below table for your table and it can be use with any type of bootstrap tables.
                                 </p>
                                 <?php
-                                 
+                                
                                 //datos a enviar
                                 //url contra la que atacamos
                                 $ch = curl_init("https://mt-america.golfmanager.com/api/clientsFull?tenant=golfsantodomingo");
@@ -833,7 +833,15 @@
                                     return false;
                                 }else{
                                     $myArray = json_decode($response, true);
-                                    echo "hola:".$myArray[0]['customfields_lastname'];
+                                    //consultar los clientes por RUT
+                                    foreach ($myArray as $clave=>$valor)
+                                    {
+                                    echo "El valor de $clave es: $valor";
+                                    }
+                                    
+                                    for($i = 0; $i <= $myArray.length; $i++){
+                                        echo "hola:".$myArray[$i]['nationalID'];
+                                    }
                                 }
                                 
 
